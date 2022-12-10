@@ -1,0 +1,27 @@
+@use "../utils/color" as color;
+@use "../utils/mixins" as mixin;
+
+@mixin card() {
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.14);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-bottom: 20px;
+  row-gap: 30px;
+
+  &:hover {
+    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+
+  &__img{
+    height: 260px;
+  }
+
+  &__icon {
+    fill: color.$light-gray;
+    height: 20px;
+    width: 20px;
+  }
+}

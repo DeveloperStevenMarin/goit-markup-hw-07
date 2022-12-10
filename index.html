@@ -31,41 +31,41 @@
     <header class="navbar">
       <nav>
         <a href="#">
-          <p class="page-name">WebStudio</p>
+          <p class="navbar__logo">WebStudio</p>
         </a>
-        <ul class="navbar-list">
+        <ul class="link-list">
           <li>
-            <a id="estudio" href="index.html" class="nav-link current"
+            <a id="estudio" href="index.html" class="link-list__link link--current"
               >Estudio</a
             >
           </li>
           <li>
-            <a id="portafolio" href="portfolio.html" class="nav-link"
+            <a id="portafolio" href="portfolio.html" class="link-list__link"
               >Portafolio</a
             >
           </li>
           <li>
-            <a id="contactos" href="#footer" class="nav-link">Contactos</a>
+            <a id="contactos" href="#footer" class="link-list__link">Contactos</a>
           </li>
         </ul>
       </nav>
-      <ul class="navbar-contact-info">
+      <ul class="contact-info-list">
         <li>
-          <figure class="navbar-info">
-            <svg class="navbar-icon">
+          <figure class="container-info">
+            <svg class="container-info__icon icon--navbar">
               <use href="images/icons.svg#email"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" target="_blank" class="nav-link"
+            <a href="mailto:info@devstudio.com" target="_blank" class="link-list__link"
               >info@devstudio.com</a
             >
           </figure>
         </li>
         <li>
-          <figure class="navbar-info">
-            <svg class="navbar-icon">
+          <figure class="container-info">
+            <svg class="container-info__icon icon--navbar">
               <use href="images/icons.svg#smartphone"></use>
             </svg>
-            <a href="tel:+525555296000" target="_blank" class="nav-link"
+            <a href="tel:+525555296000" target="_blank" class="link-list__link"
               >+52 55 5529 6000</a
             >
           </figure>
@@ -73,36 +73,36 @@
       </ul>
     </header>
     <main>
-      <article class="content">
-        <h1 class="article-title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="main-button" data-modal-open>
+      <article class="services-container">
+        <h1 class="services-container__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
+        <button class="services-container__button" data-modal-open>
           Solicite nuestro servicio
         </button>
       </article>
       <article>
-        <ul class="main-content-list">
-          <li class="main-content-features">
+        <ul class="features-list">
+          <li class="features-list__element">
             <section>
-              <div>
-                <svg class="main-content-icon">
+              <div class="feature-card">
+                <svg class="feature-card__icon">
                   <use href="images/icons.svg#antena"></use>
                 </svg>
               </div>
-              <h2 class="main-content-features">ATENCIÓN A LOS DETALLES</h2>
+              <h2 class="features-list__element">ATENCIÓN A LOS DETALLES</h2>
               <p class="main-content-text">
                 Nos adentramos en todos los detalles y procesos de su negocio,
                 para así desarrollar una solución a su medida.
               </p>
             </section>
           </li>
-          <li class="main-content-features">
+          <li class="features-list__element">
             <section>
-              <div>
-                <svg class="main-content-icon">
+              <div class="feature-card">
+                <svg class="feature-card__icon">
                   <use href="images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h2 class="main-content-features">PUNTUALIDAD</h2>
+              <h2 class="features-list__element">PUNTUALIDAD</h2>
               <p class="main-content-text">
                 Con nosotros, usted puede sentirse seguro y protegido. Un
                 principio importante de la empresa: respetar su tiempo y
@@ -110,28 +110,28 @@
               </p>
             </section>
           </li>
-          <li class="main-content-features">
+          <li class="features-list__element">
             <section>
-              <div>
-                <svg class="main-content-icon">
+              <div class="feature-card">
+                <svg class="feature-card__icon">
                   <use href="images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h2 class="main-content-features">PLANIFICACIÓN</h2>
+              <h2 class="features-list__element">PLANIFICACIÓN</h2>
               <p>
                 Usted podrá observar y participar en cada fase del desarrollo y
                 aplicación de soluciones.
               </p>
             </section>
           </li>
-          <li class="main-content-features">
+          <li class="features-list__element">
             <section>
-              <div>
-                <svg class="main-content-icon">
+              <div class="feature-card">
+                <svg class="feature-card__icon">
                   <use href="images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h2 class="main-content-features">TEGNOLOGÍA MODERNA</h2>
+              <h2 class="features-list__element">TEGNOLOGÍA MODERNA</h2>
               <p>
                 Usamos herramientas innovadoras para resolver las tareas
                 asignadas. Es hora de simplificar los procesos laborales.
@@ -140,38 +140,38 @@
           </li>
         </ul>
       </article>
-      <article class="main-content">
-        <h2 class="main-content-title">A qué nos dedicamos</h2>
-        <ul class="main-content-list">
+      <article class="our-job-container">
+        <h2 class="our-job-container__title">A qué nos dedicamos</h2>
+        <ul class="our-job-container__list">
           <li>
-            <div class="img-content">
+            <div class="img-container">
               <img
                 src="images/image.jpg"
                 alt="primer imagen sobre a que nos dedicamos"
               />
-              <div class="image-title">
+              <div class="img-container__title">
                 <h4>Aplicaciones de escritorio</h4>
               </div>
             </div>
           </li>
           <li>
-            <div class="img-content">
+            <div class="img-container">
               <img
                 src="images/image2.jpg"
                 alt="segunda imagen sobre a que nos dedicamos"
               />
-              <div class="image-title">
+              <div class="img-container__title">
                 <h4>Aplicaciones móviles</h4>
               </div>
             </div>
           </li>
           <li>
-            <div class="img-content">
+            <div class="img-container">
               <img
                 src="images/image3.jpg"
                 alt="tercera imagen sobre a que nos dedicamos"
               />
-              <div class="image-title">
+              <div class="img-container__title">
                 <h4>Soluciones de diseño</h4>
               </div>
             </div>
@@ -179,16 +179,16 @@
         </ul>
       </article>
 
-      <article class="main-content-team">
-        <h2 class="main-content-title">Nuestro Equipo</h2>
-        <ul class="main-content-list">
+      <article class="team-container">
+        <h2 class="team-container__title">Nuestro Equipo</h2>
+        <ul class="team-container__list">
           <li>
             <section class="team-card">
-              <img class="team-img" src="images/team-member.jpg" alt="" />
+              <img class="team-card__img" src="images/team-member.jpg" alt="" />
               <section class="team-section">
-                <p class="team-name">Andrés Cubo</p>
-                <p class="team-job">Diseñador de Productos</p>
-                <ul class="team-social-sites">
+                <p class="team-section__team-name">Andrés Cubo</p>
+                <p class="team-section__team-job">Diseñador de Productos</p>
+                <ul class="team-social-media">
                   <li class="team-social-red">
                     <a
                       href="http://instagram.com"
@@ -243,11 +243,11 @@
           </li>
           <li>
             <section class="team-card">
-              <img class="team-img" src="images/team-member2.jpg" alt="" />
+              <img class="team-card__img" src="images/team-member2.jpg" alt="" />
               <section class="team-section">
-                <p class="team-name">Carla Palacios</p>
-                <p class="team-job">Desarrolladora Frontend</p>
-                <ul class="team-social-sites">
+                <p class="team-section__team-name">Carla Palacios</p>
+                <p class="team-section__team-job">Desarrolladora Frontend</p>
+                <ul class="team-social-media">
                   <li class="team-social-red">
                     <a
                       href="http://instagram.com"
@@ -302,11 +302,11 @@
           </li>
           <li>
             <section class="team-card">
-              <img class="team-img" src="images/team-member3.jpg" alt="" />
+              <img class="team-card__img" src="images/team-member3.jpg" alt="" />
               <section class="team-section">
-                <p class="team-name">Mario Dorado</p>
-                <p class="team-job">Marketing</p>
-                <ul class="team-social-sites">
+                <p class="team-section__team-name">Mario Dorado</p>
+                <p class="team-section__team-job">Marketing</p>
+                <ul class="team-social-media">
                   <li class="team-social-red">
                     <a
                       href="http://instagram.com"
@@ -361,11 +361,11 @@
           </li>
           <li>
             <section class="team-card">
-              <img class="team-img" src="images/team-member-4.jpg" alt="" />
+              <img class="team-card__img" src="images/team-member-4.jpg" alt="" />
               <section class="team-section">
-                <p class="team-name">Pablo Mijangos</p>
-                <p class="team-job">Diseñador IU</p>
-                <ul class="team-social-sites">
+                <p class="team-section__team-name">Pablo Mijangos</p>
+                <p class="team-section__team-job">Diseñador IU</p>
+                <ul class="team-social-media">
                   <li class="team-social-red">
                     <a
                       href="http://instagram.com"
@@ -471,10 +471,10 @@
     <footer id="footer">
       <article class="footer-contact">
         <a href="#">
-          <p class="footer-page-name">WebStudio</p>
+          <p class="footer-contact__logo">WebStudio</p>
         </a>
         <address>
-          <ul class="footer-list">
+          <ul class="footer-contact__list">
             <li><p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p></li>
             <li>
               <p style="color: rgba(255, 255, 255, 0.6)">info@example.com</p>
@@ -486,16 +486,15 @@
         </address>
       </article>
       <article class="footer-social-media">
-        <h2 class="social-media-title">ENCUENTRENOS EN</h2>
+        <h2 class="footer-social-media__title">ENCUENTRENOS EN</h2>
         <ul>
           <li>
             <a
-              class="social-media-button"
               href="http://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#instagram"></use>
               </svg>
             </a>
@@ -503,12 +502,11 @@
 
           <li>
             <a
-              class="social-media-button"
               href="http://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#twitter"></use>
               </svg>
             </a>
@@ -516,12 +514,11 @@
 
           <li>
             <a
-              class="social-media-button"
               href="http://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#facebook"></use>
               </svg>
             </a>
@@ -529,12 +526,11 @@
 
           <li>
             <a
-              class="social-media-button"
               href="http://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#linkedin"></use>
               </svg>
             </a>
@@ -543,7 +539,7 @@
       </article>
       <div class="subscribe-container">
         <form action="">
-          <div class="subscribe-container-form">
+          <div class="subscribe-container__form-container">
             <label for="subscribe-email">SUSCRÍBASE al boletín informativo.</label>
             <input type="email" name="subscribe-email" id="subscribe-email"placeholder="Correo electrónico" />
           </div>
@@ -552,40 +548,39 @@
       </div>
     </footer>
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close class="close-icon">
+        <button data-modal-close class="modal__close-icon">
           <svg>
             <use href="images/icons.svg#close"></use>
           </svg>
         </button>
-        <h2 class="form-title">Deje sus datos, nos contactaremos con usted</h2>
-        <form action="" name="Contact information by user" class="contact-form">
+        <h2 class="modal__title">Deje sus datos, nos contactaremos con usted</h2>
+        <form action="" name="Contact information by user" class="modal-form">
           <div class="custom-input">
-            <label for="user" class="label-form">Nombre</label>
+            <label for="user" >Nombre</label>
             <input id="user" type="text" name="User name" />
             <svg>
               <use href="images/icons.svg#user"></use>
             </svg>
           </div>
           <div class="custom-input">
-            <label for="phone" class="label-form">Teléfono</label>
+            <label for="phone" >Teléfono</label>
             <input id="phone" type="tel" name="User phone" />
             <svg>
               <use href="images/icons.svg#phone-form"></use>
             </svg>
           </div>
           <div class="custom-input">
-            <label for="email" class="label-form">E-mail</label>
+            <label for="email">E-mail</label>
             <input id="email" type="email" name="User mail" />
             <svg>
               <use href="images/icons.svg#mail-form"></use>
             </svg>
           </div>
-          <div class="custom-input feedback">
-            <label for="feedback" class="label-form">Comentarios</label>
+          <div class="custom-input custom-input--feedback">
+            <label for="feedback" >Comentarios</label>
             <textarea
-              class="form-text-area"
               name="feedback"
               id="feedback"
               cols="30"
@@ -599,12 +594,12 @@
               type="checkbox"
               name="terms-conditions"
             />
-            <label for="terms-conditions" class="label-form terms-conditions"
+            <label for="terms-conditions"
               >Estoy de acuerdo con el boletín informativo y acepto los Términos
               y Condiciones.</label
             >
           </div>
-          <button type="submit" class="submit-button">Enviar</button>
+          <button type="submit" class="modal-form__button">Enviar</button>
         </form>
       </div>
     </div>

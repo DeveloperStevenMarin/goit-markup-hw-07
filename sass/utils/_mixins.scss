@@ -1,0 +1,36 @@
+@use './color' as color;
+
+
+@mixin ul(){
+    display: block;
+    list-style-type: none;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+    padding-inline-start: 0px;
+}
+
+@mixin a(){
+    color: rgba(33, 33, 33, 1);
+    text-decoration: none;
+}
+
+@mixin icons(){
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+@mixin address() {
+    color: color.$white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    width: 231px;
+}
