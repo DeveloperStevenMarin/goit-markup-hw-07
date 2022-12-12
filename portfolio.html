@@ -30,58 +30,72 @@
     <header class="navbar">
       <nav>
         <a href="#">
-          <p class="page-name">WebStudio</p>
+          <p class="navbar__logo">WebStudio</p>
         </a>
-        <ul class="navbar-list">
+        <ul class="link-list">
           <li>
-            <a id="estudio" href="index.html" class="nav-link">Estudio</a>
+            <a
+              id="estudio"
+              href="index.html"
+              class="link-list__link"
+              >Estudio</a
+            >
           </li>
           <li>
-            <a id="portafolio" href="portfolio.html" class="nav-link current"
+            <a id="portafolio" href="portfolio.html" class="link-list__link link-list__link--current"
               >Portafolio</a
             >
           </li>
           <li>
-            <a id="contactos" href="#footer" class="nav-link">Contactos</a>
+            <a id="contactos" href="#footer" class="link-list__link"
+              >Contactos</a
+            >
           </li>
         </ul>
       </nav>
-      <ul class="navbar-contact-info">
+      <ul class="contact-info-list">
         <li>
-          <figure class="navbar-info">
-            <svg class="navbar-icon">
+          <figure class="container-info">
+            <svg class="icon icon--navbar">
               <use href="images/icons.svg#email"></use>
             </svg>
-            <a href="mailto:info@devstudio.com" target="_blank" class="nav-link"
+            <a
+              href="mailto:info@devstudio.com"
+              target="_blank"
+              class="container-info__link"
               >info@devstudio.com</a
             >
           </figure>
         </li>
         <li>
-          <figure class="navbar-info">
-            <svg class="navbar-icon">
+          <figure class="container-info">
+            <svg class="icon--navbar icon ">
               <use href="images/icons.svg#smartphone"></use>
             </svg>
-            <a href="tel:+525555296000" target="_blank" class="nav-link"
+            <a
+              href="tel:+525555296000"
+              target="_blank"
+              class="container-info__link"
               >+52 55 5529 6000</a
             >
           </figure>
         </li>
       </ul>
     </header>
+    
     <main>
-      <article class="portafolio-content">
-        <ul class="product-category">
-          <li class="category-card"><button>Todo</button></li>
-          <li class="category-card"><button>Sitios-Web</button></li>
-          <li class="category-card"><button>Aplicaciones</button></li>
-          <li class="category-card"><button>Diseño</button></li>
-          <li class="category-card"><button>Marketing</button></li>
+      <article class="portfolio-container">
+        <ul class="category-container">
+          <li><button class="button--category-container">Todo</button></li>
+          <li><button class="button--category-container">Sitios-Web</button></li>
+          <li><button class="button--category-container">Aplicaciones</button></li>
+          <li><button class="button--category-container">Diseño</button></li>
+          <li><button class="button--category-container">Marketing</button></li>
         </ul>
         <ul class="product-cards">
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Tecnoduck es una plataforma de distribución de coronavirus de
                   última generación. Las compañías usan esta plataforma para el
@@ -90,13 +104,13 @@
                 </p>
               </div>
               <img src="images/product1.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">Tecnoduck</p>
-              <p class="category-text">Sitio-web</p>
+              <p class="card--products__name">Tecnoduck</p>
+              <p class="card--products__category">Sitio-web</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -106,15 +120,15 @@
                 </p>
               </div>
               <img src="images/product2.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">
+              <p class="card--products__name">
                 Póster de Nueva Orleans vs Estrella Dorada
               </p>
-              <p class="category-text">Diseño</p>
+              <p class="card--products__category">Diseño</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -124,13 +138,13 @@
                 </p>
               </div>
               <img src="images/product3.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">Restaurante Seafood</p>
-              <p class="category-text">Aplicaciones</p>
+              <p class="card--products__name">Restaurante Seafood</p>
+              <p class="card--products__category">Aplicaciones</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -140,13 +154,13 @@
                 </p>
               </div>
               <img src="images/product4.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">Proyecto Prime</p>
-              <p class="category-text">Marketing</p>
+              <p class="card--products__name">Proyecto Prime</p>
+              <p class="card--products__category">Marketing</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -156,13 +170,13 @@
                 </p>
               </div>
               <img src="images/product5.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">Proyecto Cajas</p>
-              <p class="category-text">Aplicaciones</p>
+              <p class="card--products__name">Proyecto Cajas</p>
+              <p class="card--products__category">Aplicaciones</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -172,13 +186,13 @@
                 </p>
               </div>
               <img src="images/product6.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">La inspiración no tiene límites</p>
-              <p class="category-text">Sitio-web</p>
+              <p class="card--products__name">La inspiración no tiene límites</p>
+              <p class="card--products__category">Sitio-web</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -188,13 +202,13 @@
                 </p>
               </div>
               <img src="images/product7.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">Edición Limitada</p>
-              <p class="category-text">Diseño</p>
+              <p class="card--products__name">Edición Limitada</p>
+              <p class="card--products__category">Diseño</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -204,13 +218,13 @@
                 </p>
               </div>
               <img src="images/product8.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">Proyecto LAB</p>
-              <p class="category-text">Marketing</p>
+              <p class="card--products__name">Proyecto LAB</p>
+              <p class="card--products__category">Marketing</p>
             </figure>
           </li>
-          <li class="product-card">
+          <li class="card--products">
             <figure>
-              <div class="card-emergent">
+              <div class="card--emergent">
                 <p class="product-description">
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry. Lorem Ipsum has been the industry's
@@ -220,8 +234,8 @@
                 </p>
               </div>
               <img src="images/product9.jpg" alt="Imagen del portafolio" />
-              <p class="product-name">Negocio en Crecimiento</p>
-              <p class="category-text">Aplicaciones</p>
+              <p class="card--products__name">Negocio en Crecimiento</p>
+              <p class="card--products__category">Aplicaciones</p>
             </figure>
           </li>
         </ul>
@@ -230,10 +244,10 @@
     <footer id="footer">
       <article class="footer-contact">
         <a href="#">
-          <p class="footer-page-name">WebStudio</p>
+          <p class="footer-contact__logo">WebStudio</p>
         </a>
         <address>
-          <ul class="footer-list">
+          <ul class="footer-contact__list">
             <li><p>Calz. Ticomán 500, Ciudad de México, CDMX, México</p></li>
             <li>
               <p style="color: rgba(255, 255, 255, 0.6)">info@example.com</p>
@@ -245,16 +259,16 @@
         </address>
       </article>
       <article class="footer-social-media">
-        <h2 class="social-media-title">ENCUENTRENOS EN</h2>
+        <h2 class="footer-social-media__title">ENCUENTRENOS EN</h2>
         <ul>
           <li>
             <a
-              class="social-media-button"
               href="http://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
+              class=" button--social-media-footer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#instagram"></use>
               </svg>
             </a>
@@ -262,12 +276,12 @@
 
           <li>
             <a
-              class="social-media-button"
               href="http://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
+              class=" button--social-media-footer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#twitter"></use>
               </svg>
             </a>
@@ -275,12 +289,12 @@
 
           <li>
             <a
-              class="social-media-button"
               href="http://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
+              class=" button--social-media-footer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#facebook"></use>
               </svg>
             </a>
@@ -288,12 +302,12 @@
 
           <li>
             <a
-              class="social-media-button"
               href="http://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
+              class="button--social-media-footer"
             >
-              <svg class="social-media-icon">
+              <svg>
                 <use href="images/icons.svg#linkedin"></use>
               </svg>
             </a>
@@ -302,11 +316,22 @@
       </article>
       <div class="subscribe-container">
         <form action="">
-          <div class="subscribe-container-form">
-            <label for="subscribe-email">SUSCRÍBASE al boletín informativo.</label>
-            <input type="email" name="subscribe-email" id="subscribe-email"placeholder="Correo electrónico" />
+          <div class="subscribe-container__form-container">
+            <label for="subscribe-email"
+              >SUSCRÍBASE al boletín informativo.</label
+            >
+            <input
+              type="email"
+              name="subscribe-email"
+              id="subscribe-email"
+              placeholder="Correo electrónico"
+            />
           </div>
-        <button type="submit">Suscríbase<svg><use href="images/icons.svg#telegram"></use></svg></button>
+          <button type="submit" class="button button--footer">
+            Suscríbase<svg class="icon icon--footer-button">
+              <use href="images/icons.svg#telegram"></use>
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
