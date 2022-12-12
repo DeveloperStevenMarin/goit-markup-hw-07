@@ -1,12 +1,14 @@
 @use "../utils/color" as color;
 @use "../utils/mixins" as mixin;
 @use "../components/cards" as cards;
+@use "./icons" as icons;
+@use "./buttons" as buttons;
 
 .team-container {
   margin-top: 90px;
   padding-top: 90px;
   padding-bottom: 90px;
-  background-color: rgba(245, 244, 250, 1);
+  background-color: color.$light-gray-2;
 
   &__title {
     align-items: center;
@@ -72,26 +74,20 @@
   gap: 15px;
   justify-content: center;
 
-  li {
-    a {
-      align-items: center;
-      background-color: color.$white;
-      border-radius: 100%;
-      display: flex;
-      height: 40px;
-      justify-content: center;
-      width: 40px;
-      &:hover,
-      &:hover svg {
-        background-color: color.$main-color;
-        fill: color.$white;
-      }
+ 
+}
 
-      svg {
-        fill: color.$light-gray;
-        height: 20px;
-        width: 20px;
-      }
-    }
-  }
+.button{
+  @include buttons.button;
+}
+
+.button--social-media{
+  @include buttons.button--social-media;
+}
+
+.icon {
+  @include icons.icon;
+}
+.icon--social-media {
+  @include icons.icon--social-media;
 }

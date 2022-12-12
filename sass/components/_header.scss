@@ -1,22 +1,6 @@
 @use "../utils/color" as color;
 @use "../utils/mixins" as mixin;
-
-nav {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  a:hover {
-    color: color.$main-color;
-    cursor: pointer;
-  }
-}
-a {
-  @include mixin.a;
-}
-
-ul {
-  @include mixin.ul;
-}
+@use "../components/icons" as icons;
 
 .navbar {
   align-items: center;
@@ -50,25 +34,23 @@ ul {
   height: 80px;
   list-style: none;
   column-gap: 50px;
-  li {
-    .link-list__link {
-      line-height: 77px;
-      font-weight: 700;
-    }
-    .link--current {
-      color: color.$main-color;
-      fill: color.$main-color;
+  .link-list__link {
+    line-height: 77px;
+    font-weight: 700;
+  }
+  .link-list__link--current {
+    color: color.$main-color;
+    fill: color.$main-color;
 
-      &::after {
-        line-height: 77px;
-        font-weight: 600;
-        display: block;
-        content: "";
-        height: 4px;
-        width: 100%;
-        background-color: #2196f3;
-        border-radius: 2px;
-      }
+    &::after {
+      line-height: 77px;
+      font-weight: 600;
+      display: block;
+      content: "";
+      height: 4px;
+      width: 100%;
+      background-color: #2196f3;
+      border-radius: 2px;
     }
   }
 }
@@ -78,30 +60,26 @@ ul {
   height: 80px;
   list-style: none;
   column-gap: 50px;
-  li {
-    .container-info {
-      display: flex;
-      gap: 10px;
-      &:hover a, &:hover .icon--navbar{
-        color: color.$main-color;
-        fill: color.$main-color;
-      }
-      a {
-        color: color.$light-gray;
-        font-size: 14px;
-        font-weight: 500;
-        letter-spacing: 0.02em;
-        line-height: 16px;
-      }
-      &__icon {
-        @include mixin.icons;
-      }
-      .icon--navbar {
-        display: flex;
-        height: 16px;
-        width: 16px;
-        fill: color.$light-gray;
-      }
-    }
+}
+.container-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  &:hover .icon--navbar {
+    fill: color.$main-color;
+  }
+  &__link {
+    color: color.$light-gray;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 16px;
   }
 }
+.icon {
+  @include icons.icon;
+}
+.icon--navbar {
+  @include icons.icon--navbar;
+}
+

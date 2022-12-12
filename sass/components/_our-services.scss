@@ -1,17 +1,19 @@
 @use "../utils/color" as color;
 @use "../utils/mixins" as mixin;
+@use "./buttons" as buttons;
 
 .services-container {
   align-items: center;
   background: linear-gradient(
       0deg,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
+      color.$background-translucent,
+      color.$background-translucent
     ),
     url(../images/main-content-image.jpg);
   background-attachment: fixed;
   background-size: 100%;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  //box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  @include mixin.box-shadow;
   color: color.$white;
   display: flex;
   flex-direction: column;
@@ -28,24 +30,10 @@
     text-transform: uppercase;
     width: 696px;
   }
-
-  &__button{
-    align-items: center;
-    background: color.$main-color;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    color: var(--white);
-    font-weight: 700px;
-    display: flex;
-    flex-direction: row;
-    height: 50px;
-    margin-top: 40px;
-    justify-content: center;
-    width: 260px;
-
-    &:hover{
-        cursor: pointer;
-    }
-  }
+}
+.button{
+  @include buttons.button;
+}
+.button-services{
+  @include buttons.button-services;
 }

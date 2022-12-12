@@ -1,5 +1,6 @@
 @use "../utils/color" as color;
 @use "../utils/mixins" as mixin;
+@use "./icons" as icons;
 
 .clients-container {
   &__title {
@@ -41,18 +42,18 @@
     justify-content: center;
     margin: 45px 0px 150px 0px;
     width: 170px;
-
     &:hover,
-    &:hover svg {
+    &:hover .icon--company {
       fill: color.$main-color;
       border-color: color.$main-color;
       cursor: pointer;
     }
-    svg {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      fill: color.$light-gray;
-    }
   }
+}
+
+.icon {
+  @include icons.icon;
+}
+.icon--company {
+  @include icons.icon--company;
 }
