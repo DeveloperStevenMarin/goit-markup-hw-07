@@ -140,17 +140,3 @@
     color: rgba(117, 117, 117, 1);
   }
 }
-.button {
-  @include buttons.button;
-}
-.button--modal {
-  @include buttons.button--modal;
-}
-
-.button--close-modal{
-  @include buttons.button--close-modal;
-}
-
-.icon--input-modal{
-  @include icons.icon--input-modal;
-}

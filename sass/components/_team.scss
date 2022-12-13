@@ -5,10 +5,10 @@
 @use "./buttons" as buttons;
 
 .team-container {
-  margin-top: 90px;
-  padding-top: 90px;
-  padding-bottom: 90px;
   background-color: color.$light-gray-2;
+  margin-top: 90px;
+  padding-bottom: 90px;
+  padding-top: 90px;
 
   &__title {
     align-items: center;
@@ -33,10 +33,6 @@
     margin-top: 50px;
     padding: 0% 15%;
   }
-}
-
-.team-card {
-  @include cards.card;
 }
 
 .team-section {
@@ -69,25 +65,10 @@
 
 .team-social-media {
   display: flex;
-  width: 260px;
-  margin: 15px 0px;
   gap: 15px;
   justify-content: center;
+  margin: 15px 0px;
+  width: 260px;
 
  
-}
-
-.button{
-  @include buttons.button;
-}
-
-.button--social-media{
-  @include buttons.button--social-media;
-}
-
-.icon {
-  @include icons.icon;
-}
-.icon--social-media {
-  @include icons.icon--social-media;
 }

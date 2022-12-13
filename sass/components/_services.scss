@@ -31,9 +31,3 @@
     width: 696px;
   }
 }
-.button{
-  @include buttons.button;
-}
-.button-services{
-  @include buttons.button-services;
-}

@@ -1,9 +1,9 @@
 @use "../utils/color" as color;
 @use "../utils/mixins" as mixin;
 
-@mixin card() {
+.card {
+  @include mixin.box-shadow-cards();
   border-radius: 5px;
-  box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.14);
   display: flex;
   flex-direction: column;
   height: fit-content;
@@ -11,40 +11,44 @@
   row-gap: 30px;
 
   &:hover {
-    box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    @include mixin.box-shadow-cards(true);
     cursor: pointer;
   }
+}
 
-  &__img {
+.card--teams {
+  border-radius: 5px;
+  box-shadow: 1px 2px 5px 1px rgb(0 0 0 / 14%);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  padding-bottom: 20px;
+  row-gap: 30px;
+  img {
     height: 260px;
   }
-
-  &__icon {
+  svg {
     fill: color.$light-gray;
     height: 20px;
     width: 20px;
   }
 }
 
-@mixin card--teams() {
-}
-
-@mixin card--products() {
-  position: relative;
+.card--products {
   align-items: center;
   border-radius: 5px;
-  @include mixin.box-shadow-cards();
   display: flex;
   flex-direction: column;
   height: 410px;
   justify-content: flex-start;
-  padding: 0%;
-  width: 370px;
   overflow: hidden;
+  padding: 0%;
+  position: relative;
+  width: 370px;
   &:hover .card--emergent {
     transform: translateY(0%);
-    transition: transform 250ms ease;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 250ms ease;
   }
   &:hover {
     @include mixin.box-shadow-cards(true);
@@ -52,29 +56,32 @@
   }
 
   &__name {
+    box-shadow: none;
     color: color.$black;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 25px;
+    line-height: 20px;
     margin-left: 20px;
     margin-top: 20px;
   }
 
   &__category {
+    box-shadow: none;
     color: color.$light-gray;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.03em;
-    line-height: 30px;
     margin-left: 20px;
+    margin-top: 15px;
   }
 }
-@mixin card--emergent {
+.card--emergent {
   align-items: center;
   background: color.$main-color-translucent;
   border-radius: 2px;
+  box-shadow: none;
   color: color.$white;
   display: flex;
   height: 295px;

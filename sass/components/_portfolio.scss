@@ -32,14 +32,3 @@
   margin-top: 50px;
 }
 
-.card--products {
-  @include cards.card--products;
-}
-
-.button--category-container {
-  @include buttons.button--category-container;
-}
-
-.card--emergent{
-  @include cards.card--emergent;
-}
